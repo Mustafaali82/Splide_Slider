@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#my-slider {
+    padding: 50px 0;
+    background-color: black;
+}
+
+
+.splide__slide {
+    width: 200px;
+    height: 500px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding: 45px;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    border-radius: 20px;
+    border: 1px solid #bdbdbd74;
+}
+
+.card1 {
+    background-image: url("n3emCClp61Wif9yIzqKnIc0jA.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.card2 {
+    background-image: url("1Im90kQK2BsIkECUoFYAxZS1mgs.jpg");
+    background-size: cover;
+    background-position: center;
+}.card3 {
+    background-image: url("Sq0JHAlNq5Ge03BiMKsgQ8UgpM4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.card4 {
+    background-image: url("kDV7XON9K7uWHvSYZBp8wWm1UI.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.card5 {
+    background-image: url("MmRkRNPHxoZkKYfwwY6Wvn4tYw0.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.card6 {
+    background-image: url("88wpPke4jL2jwqEom9rZdikjJz0.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.splide__list {
+    display: flex;
+    gap: 30px;
+}

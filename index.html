@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="splide" id="my-slider">
+      <div class="splide__track">
+        <div class="splide__list">
+          <div class="splide__slide card1">
+            <h2>Social Content & Digital Storytelling</h2>
+          </div>
+          <div class="splide__slide card2">
+            <h2>Moodboards & Concept Development</h2>
+          </div>
+          <div class="splide__slide card3">
+            <h2>Branding, Identity & Art Direction</h2>
+          </div>
+          <div class="splide__slide card4">
+            <h2>Advertising, Campaigns & Editorial</h2>
+          </div>
+          <div class="splide__slide card5">
+            <h2>Web, UI/UX & E-Commerce Design</h2>
+          </div>
+          <div class="splide__slide card6">
+            <h2>Pitch Decks, Mock-ups & Print Collateral</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-url-hash@4/dist/js/splide-extension-url-hash.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var splide = new Splide(".splide", {
+        perPage: 4,
+        perMove: 1,
+        height: "30rem",
+        focus: "center",
+        trimSpace: false,
+        breakpoints: {
+          600: {
+            perPage: 2,
+            height: "6rem",
+          },
+        },
+        arrows: false, // agar arrows nahi chahiye
+        pagination: false, // agar dots nahi chahiye
+      });
+
+      splide.mount();
+    });
+  </script>
+</html>
